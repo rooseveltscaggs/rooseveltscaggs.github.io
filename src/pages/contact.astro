@@ -1,0 +1,116 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Card from "../components/Card.astro";
+import { Image } from "astro:assets";
+import "../styles/global.css";
+---
+
+<MainLayout subtitle="Contact">
+  <section class="py-5">
+    <div class="container px-5">
+      <!-- Contact form-->
+      <div class="bg-white rounded-4 py-5">
+        <div class="text-center mb-5">
+          <div
+            class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
+            <i class="bi bi-envelope"></i>
+          </div>
+          <h1 class="fw-bolder">Contact Me</h1>
+          <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
+        </div>
+        <div class="container">
+          <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+              <p class="mb-5">
+                I am available for contract work, internships, and full time
+                positions. <br /> When you're ready - let me know!
+              </p>
+              <div class="row gx-5">
+                <div class="col-12 col-md-6 mb-3 mb-md-0" id="EmailCard">
+                  <div class="card lift">
+                    <div class="card-body">
+                      <div class="small text-primary fw-bold mb-2" id="MsgCopy">
+                        Click to Copy!
+                      </div>
+                      <div
+                        class="icon-stack icon-stack-lg bg-gradient-primary-to-secondary text-white mb-3">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-mail"
+                          ><path
+                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                          ></path><polyline points="22,6 12,13 2,6"
+                          ></polyline></svg>
+                      </div>
+                      <div class="small" id="ContactEmailValue">
+                        <a>rscaggs@princeton.edu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                  <div class="card lift">
+                    <a
+                      href="https://linkedin.com/in/roosevelt-scaggs"
+                      class="stretched-link"
+                      target="_blank"
+                      rel="noopener noreferrer"></a>
+                    <div class="card-body">
+                      <div class="small text-primary fw-bold mb-2">
+                        Click to Connect!
+                      </div>
+                      <div
+                        class="icon-stack icon-stack-lg bg-primary text-white mb-3">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-linkedin"
+                          ><path
+                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                          ></path><rect x="2" y="9" width="4" height="12"
+                          ></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                      </div>
+                      <div class="small">Roosevelt Scaggs</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>
+
+<!-- <style>
+
+</style> -->
+<script>
+  const emailCard = document.getElementById("EmailCard");
+  function copyEmail() {
+    navigator.clipboard.writeText(
+      document.getElementById("ContactEmailValue").innerText,
+    );
+    document.getElementById("MsgCopy").innerText = "Copied!";
+    document.getElementById("MsgCopy").classList.remove("text-primary");
+    document.getElementById("MsgCopy").classList.add("text-success");
+  }
+
+  emailCard.addEventListener("click", () => copyEmail());
+</script>

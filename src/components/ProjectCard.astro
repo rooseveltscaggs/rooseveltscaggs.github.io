@@ -1,0 +1,55 @@
+---
+import FilterBadge from "./FilterBadge.astro";
+import { Image } from "astro:assets";
+const {
+  linkTo = "#!",
+  projectTitle = "Upcoming Project",
+  description = "TBD",
+  tagList = "",
+  imageSrc = "https://source.unsplash.com/2d4lAQAlbDA/800x500",
+} = Astro.props;
+
+const tags = tagList.split(',');
+---
+
+<div class="col-lg-6 mb-5">
+  <a class="card lift h-100" href={linkTo}>
+    <img class="card-img-top" src={imageSrc} alt={projectTitle} />
+    <!-- <Image
+    src={imageSrc}
+    alt="Mainframe's Magic Schedule Builder on the homepage"
+    class="hero-md-image center"
+  /> -->
+    <div class="card-body">
+      <h4 class="card-title mb-2 text-primary">{projectTitle}</h4>
+      <p class="card-text" set:html={description}></p>
+      <div>
+        {tags.map((tag) => (
+            <FilterBadge badgeText={tag.trim()}></FilterBadge>
+           ))}
+      </div>
+    </div>
+    <div
+      class="card-footer bg-transparent border-top d-flex align-items-center justify-content-between">
+      <div class="small text-primary">See more</div>
+      <div class="small text-primary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-arrow-right"
+          ><line x1="5" y1="12" x2="19" y2="12"></line><polyline
+            points="12 5 19 12 12 19"></polyline></svg
+        >
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- <style></style> -->

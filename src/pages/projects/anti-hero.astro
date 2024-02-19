@@ -1,0 +1,497 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import HeroImage from "../../img/anti-hero/ProjectCardPreview_Node.png";
+import "../../styles/uikit.css";
+import { Image } from "astro:assets";
+// import "../../styles/global.css";
+import MainframeMBPImage from "../../img/mainframe_msb_macbookpro.png";
+import FailureDetection from "../../img/anti-hero/FailureDetection.png";
+import NodeRecovery from "../../img/anti-hero/NodeRecovery.png";
+import NewServer from "../../img/anti-hero/NewServer.png";
+import MockupMBP_Node1 from "../../img/anti-hero/MockupMBP_Node1.png";
+import AntiHeroClient from "../../img/anti-hero/AntiHeroClient.png";
+---
+
+<script is:inline src="https://unpkg.com/feather-icons"></script>
+<script
+  is:inline
+  defer=""
+  src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+  crossorigin="anonymous"></script>
+<MainLayout subtitle="ANTI-HERO">
+  <header
+    class="page-header-ui page-header-ui-dark bg-gradient-primary-to-secondary">
+    <div class="page-header-ui-content">
+      <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-xl-8 col-lg-10 text-center mb-4" data-aos="fade">
+            <h1 class="page-header-ui-title">ANTI-HERO</h1>
+            <p class="page-header-ui-text">
+              A distributed system for balancing durability and resource cost
+            </p>
+            <!-- <a
+            class="btn btn-success fw-500 me-2"
+            href="https://mffdemo.swstx.org"
+            target="_blank"
+            rel="noopener noreferrer">Download Slides</a
+          >
+          <a
+            class="btn btn-link fw-500"
+            href="https://mercerfoodfinder.herokuapp.com"
+            target="_blank"
+            rel="noopener noreferrer">Project Report</a
+          > -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="svg-border-rounded text-light">
+      <!-- Rounded SVG Border-->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 144.54 17.34"
+        preserveAspectRatio="none"
+        fill="currentColor">
+        <path
+          d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+        ></path>
+      </svg>
+    </div>
+  </header>
+  <section class="bg-light pb-10 pt-1">
+    <div class="container px-5">
+      <div class="device-laptop text-gray-200 mt-n10" data-aos="fade-up">
+        <svg
+          class="device-container"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="83.911 298.53 426.962 243.838">
+          <path
+            d="M474.843 516.208V309.886c0-6.418-4.938-11.355-11.354-11.355H131.791c-6.417 0-11.354 4.938-11.354 11.355v206.816H83.911v13.326c4.938 7.896 31.098 12.34 40.969 12.34h345.024c10.366 0 36.526-4.936 40.969-12.34v-13.326h-36.03v-.494zM134.26 313.341h326.762v203.361H134.26V313.341z">
+          </path>
+        </svg>
+        <img class="device-screenshot" src={HeroImage.src} />
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-10">
+    <div class="container px-5">
+      <div class="row gx-5 text-center">
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <div
+            class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4">
+            <i data-feather="layers"></i>
+          </div>
+          <h3>Flexible & Scalable</h3>
+          <p class="mb-0">
+            Configure ANTI-HERO exactly how you want or take a hands off
+            approach, your choice
+          </p>
+        </div>
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <div
+            class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4">
+            <i data-feather="database"></i>
+          </div>
+          <h3>Semi-Decentralized</h3>
+          <p class="mb-0">
+            Breathe easy knowing that ANTI-HERO will continue to operate, even
+            in the midst of server failures
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <div
+            class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <h3>Balanced</h3>
+          <p class="mb-0">
+            By leveraging existing infrastructure, ANTI-HERO provides fault
+            tolerance with minimal extra cost.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-light py-10">
+    <div class="container px-5 mb-5">
+      <div class="row gx-5 justify-content-center">
+        <div class="col-lg-6">
+          <div class="text-center">
+            <div class="text-xs text-uppercase-expanded text-primary mb-2">
+              System Features
+            </div>
+            <h2 class="mb-5">
+              A distributed system stronger than its weakest link
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-5">
+        <div
+          class="col-lg-4 col-md-6 mb-5"
+          data-aos="fade-up"
+          data-aos-delay="100">
+          <a class="card text-center text-decoration-none h-100 lift" href="#FaultTolerant">
+            <div class="card-body py-5">
+              <div class="icon-stack icon-stack-lg bg-red-soft text-red mb-4">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <h5>Fault Tolerant</h5>
+              <p class="card-text small">
+                Add a layer of fault tolerance to your system with ANTI-HERO's
+                node partnering mechanism
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+          <a
+            class="card text-center text-decoration-none h-100 lift"
+            href="#Self-Healing">
+            <div class="card-body py-5">
+              <div
+                class="icon-stack icon-stack-lg bg-green-soft text-green mb-4">
+                <i class="fa-solid fa-briefcase-medical"></i>
+              </div>
+              <h5>Self-Healing</h5>
+              <p class="card-text small">
+                With ANTI-HERO's self-healing feature, outages can be temporary
+                rather than indefinite
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 mb-5"
+          data-aos="fade-up"
+          data-aos-delay="150">
+          <a class="card text-center text-decoration-none h-100 lift" href="#Semi-Decentralized">
+            <div class="card-body py-5">
+              <div
+                class="icon-stack icon-stack-lg bg-yellow-soft text-yellow mb-4">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <h5>Semi-Decentralized</h5>
+              <p class="card-text small">
+                Operation of the entire cluster never depends on a single
+                server.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0" data-aos="fade-up">
+          <a class="card text-center text-decoration-none h-100 lift" href="#Scalable">
+            <div class="card-body py-5">
+              <div
+                class="icon-stack icon-stack-lg bg-purple-soft text-purple mb-4">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </div>
+              <h5>Scalable</h5>
+              <p class="card-text small">
+                Add as many nodes as you'd like and ANTI-HERO will keep up
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 mb-5 mb-md-0"
+          data-aos="fade-up"
+          data-aos-delay="100">
+          <a class="card text-center text-decoration-none h-100 lift" href="#LiveMonitoring">
+            <div class="card-body py-5">
+              <div class="icon-stack icon-stack-lg bg-blue-soft text-blue mb-4">
+                <i data-feather="activity"></i>
+              </div>
+              <h5>Live Monitoring & Analytics</h5>
+              <p class="card-text small">
+                With ANTI-HERO's monitoring tools, analyzing network traffic &
+                usage patterns is easy
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <a class="card text-center text-decoration-none h-100 lift" href="#TestClient">
+            <div class="card-body py-5">
+              <div
+                class="icon-stack icon-stack-lg bg-orange-soft text-orange mb-4">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+              <h5>Automated Interactive Test Client</h5>
+              <p class="card-text small">
+                Test the durability of the system with ANTI-HERO's
+                multi-threaded Python-based testing client
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container-lg py-5" id="FaultTolerant">
+      <h1 class="page-header-ui-title title-xl text-red mb-3">
+        Fault Tolerant
+      </h1>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <h3 class="mb-2 text-red">Automatic Failure Detection</h3>
+            <h4 class="col-xl-7 mb-4">
+              ANTI-HERO utilizes a node partnering system to leverage existing
+              infrastructure while also providing the added benefit of fault
+              tolerance. Paired nodes can work independently under normal
+              conditions and when necessary, automatically detect failures and
+              take over for their partner.
+            </h4>
+          </div>
+          <Image
+            src={FailureDetection}
+            alt="Mainframe's Magic Schedule Builder on the homepage"
+            class="hero-image center"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container-lg py-5" id="Self-Healing">
+      <h1 class="page-header-ui-title title-xl text-green mb-3">
+        Self-Healing
+      </h1>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <h3 class="mb-2 text-green">Automatic Recovery after Failure</h3>
+            <h4 class="col-xl-7 mb-4">
+              Previously failed worker nodes are able to automatically detect
+              their own failure and initiate the recovery process via the
+              Orchestrator. No user intervention needed.
+            </h4>
+          </div>
+          <Image
+            src={NodeRecovery}
+            alt="Mainframe's Magic Schedule Builder on the homepage"
+            class="hero-image center"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container-lg py-5" id="Semi-Decentralized">
+      <h1 class="page-header-ui-title title-xl text-yellow mb-3">
+        Semi-Decentralized
+      </h1>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <h3 class="mb-2 text-yellow">
+              Orchestrator intervention, as needed
+            </h3>
+            <h4 class="col-xl-7 mb-4">
+              Worker nodes only report to the centralized orchestrator as needed.
+              Under normal operating conditions, no centralized communication is
+              needed. As a result, even if communication between worker nodes
+              and the Orcehstrator temporarily falters, transactions can
+              continue.
+            </h4>
+          </div>
+          <video class="hero-image center" autoplay="autoplay" loop muted>
+            <source
+              src="/video/anti-hero/DecentralizedAnimation.mp4"
+              type="video/mp4"
+            />
+            <!-- <source src="movie.ogg" type="video/ogg"> -->
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container-lg py-5" id="Scalable">
+      <h1 class="page-header-ui-title title-xl text-purple mb-3">Scalable</h1>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <h3 class="mb-2 text-purple">
+              Scale with Additional Nodes as Needed
+            </h3>
+            <h4 class="col-xl-7 mb-4">
+              Seamelessly register new worker nodes, transfer inventory, and
+              assign partners
+            </h4>
+          </div>
+          <Image
+            src={NewServer}
+            alt="Mainframe's Magic Schedule Builder on the homepage"
+            class="hero-image center"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container-lg py-5" id="LiveMonitoring">
+      <h1 class="page-header-ui-title title-xl text-blue mb-3">
+        Live Monitoring & Analytics
+      </h1>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <h3 class="mb-2 text-blue">Monitor cluster status with web view</h3>
+            <h4 class="col-xl-7 mb-4">
+              Monitoring the status of the cluster's worker nodes and their network
+              traffic is easy with ANTI-HERO's data graph views and 3D
+              Traffic Visualizer powered by D3.js and Three.js, respectively.
+            </h4>
+          </div>
+          <Image
+            src={MockupMBP_Node1}
+            alt="Mainframe's Magic Schedule Builder on the homepage"
+            class="hero-image center"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container-lg py-5" id="TestClient">
+      <h1 class="page-header-ui-title title-xl text-orange mb-3">
+        Automated Interactive Test Client
+      </h1>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <h3 class="mb-2 text-orange">
+              Interactively configure and test your setup
+            </h3>
+            <h4 class="col-xl-7 mb-4">
+              Managing the system is easy with the interactive client which
+              supports configuring the system as well as running automated
+              testing experiments. No need to memorize complicated commands or
+              verbose URLs.
+            </h4>
+          </div>
+          <Image
+            src={AntiHeroClient}
+            alt="Mainframe's Magic Schedule Builder on the homepage"
+            class="hero-md-image center"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-dark pb-10 pt-15">
+    <div class="container px-5">
+      <div class="row gx-5 mb-10 mt-5">
+        <div class="col-lg-6 mb-5">
+          <div class="d-flex h-100">
+            <div class="icon-stack flex-shrink-0 bg-teal text-white">
+              <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="ms-4">
+              <h5 class="text-white">What technologies are used?</h5>
+              <p class="text-white-50">
+                The basis of ANTI-HERO are the intercommunicating APIs which
+                were built using Python framework Flask (later modifications
+                used FastAPI). Additionally, the background worker and test
+                client were also written using Python. ANTI-HERO's web view is a
+                React-based single page application that connects directly to
+                the servers running ANTI-HERO.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-5">
+          <div class="d-flex h-100">
+            <div class="icon-stack flex-shrink-0 bg-teal text-white">
+              <i class="fas fa-question"></i>
+            </div>
+            <div class="ms-4">
+              <h5 class="text-white">How is the data stored?</h5>
+              <p class="text-white-50">
+                Each worker node and Orchestrator have their own local
+                standalone PostgreSQL database. ANTI-HERO utilizes SQLAlchemy in
+                order to interface with the PostgreSQL database, however any
+                database compatible with SQLAlchemy can be configured for use
+                with the system.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>
+
+<script is:inline>
+  feather.replace();
+</script>
+
+<style>
+  .title-xl {
+    font-size: 3rem;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-image {
+    max-width: 70vw;
+    display: block;
+    /* max-width: 230px; */
+    /* max-height: 95px; */
+    height: auto;
+  }
+
+  .hero-video {
+    width: auto;
+    display: block;
+    /* max-width: 230px; */
+    /* max-height: 95px; */
+    height: 35vw;
+  }
+
+  .hero-image-split {
+    /* max-width: 30vw; */
+    /* max-height: 500px; */
+    height: 30vw;
+    display: block;
+    /* max-width: 230px; */
+    /* max-height: 95px; */
+    width: auto;
+  }
+
+  .mobile-device {
+    max-height: 500px;
+    width: auto;
+  }
+
+  .hero-md-image {
+    /* max-width: 30vw; */
+    max-width: 40vw;
+    min-width: 275px;
+    display: block;
+    /* max-width: 230px; */
+    /* max-height: 95px; */
+    height: auto;
+  }
+
+  video::-webkit-media-controls {
+    display: none;
+  }
+</style>

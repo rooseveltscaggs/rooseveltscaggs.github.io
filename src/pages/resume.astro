@@ -1,0 +1,377 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Card from "../components/Card.astro";
+import { Image } from "astro:assets";
+import "../styles/global.css";
+---
+
+<MainLayout subtitle="Resume">
+  <div class="container px-5 my-5">
+    <div class="text-center mb-5">
+      <h1 class="display-5 fw-bolder mb-0">
+        <span class="text-gradient d-inline">Resume</span>
+      </h1>
+    </div>
+    <div class="row gx-5 justify-content-center">
+      <div class="col-lg-11 col-xl-9 col-xxl-8">
+        <!-- Education Section-->
+        <section>
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <h2 class="text-secondary fw-bolder mb-0">Education</h2>
+            <!-- Download resume button-->
+            <!-- Note: Set the link href target to a PDF file within your project-->
+            <a class="btn btn-primary px-4 py-3" href="/Roosevelt_Scaggs_Resume.pdf"
+            target="_blank" rel="noopener noreferrer">
+              <div class="d-inline-block bi bi-download me-2"></div>
+              Download Resume
+            </a>
+          </div>
+          <!-- Education Card 2-->
+          <div class="card shadow border-0 rounded-4 mb-5">
+            <div class="card-body p-5">
+              <div class="row align-items-center gx-5">
+                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                  <div class="bg-light p-4 rounded-4">
+                    <div class="text-secondary fw-bolder mb-2">2020 - 2024</div>
+                    <div class="mb-2">
+                      <div class="small fw-bolder">Princeton University</div>
+                      <div class="small text-muted">Princeton, NJ</div>
+                    </div>
+                    <div class="fst-italic">
+                      <div class="small text-muted">
+                        Bachelor of Science in Engineering in Computer Science
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div>
+                    <span class="fw-bold">Relevant Coursework</span>
+                    <ul>
+                      <li>Distributed Systems</li>
+                      <li>Algorithms and Data Structures</li>
+                      <li>Introduction to Programming Systems</li>
+                      <li>Advanced Programming Techniques</li>
+                      <li>Information Security</li>
+                      <li>Information Technology & Public Policy</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Experience Section-->
+        <section>
+          <h2 class="text-primary fw-bolder mb-4">Experience</h2>
+          <!-- Advanced Programming Techniques Grader -->
+          <div class="card shadow border-0 rounded-4 mb-5">
+            <div class="card-body p-5">
+              <div class="row align-items-center gx-5">
+                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                  <div class="bg-light p-4 rounded-4">
+                    <div class="text-primary fw-bolder mb-2">
+                      Dec 2022 - Present
+                    </div>
+                    <div class="small fw-bolder">
+                      Advanced Programming Techniques Grader
+                    </div>
+                    <div class="small text-primary">Princeton University</div>
+                    <div class="small text-muted">Princeton, NJ</div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div>
+                    <ul>
+                      <li>
+                        Independently tests and critiques student software
+                        engineering projects for Princeton course COS333.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- THT -->
+          <div class="card shadow border-0 rounded-4 mb-5">
+            <div class="card-body p-5">
+              <div class="row align-items-center gx-5">
+                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                  <div class="bg-light p-4 rounded-4">
+                    <div class="text-primary fw-bolder mb-2">
+                      Feb 2022 - Aug 2023
+                    </div>
+                    <div class="small fw-bolder">
+                      Lead Full Stack Web Developer (Contracted)
+                    </div>
+                    <div class="small text-primary">Trenton Health Team</div>
+                    <div class="small text-muted">Trenton, NJ</div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div>
+                    <ul>
+                      <li>
+                        Designed and developed web application using Python
+                        (Flask + SQLAlchemy), HTML, CSS, and Javascript.
+                      </li>
+                      <li>
+                        Deployed and managed web application on Heroku platform
+                        using Git and configured Google API.
+                      </li>
+                      <li>
+                        Met weekly with program management team at THT to gather
+                        application feature requirements and demonstrate
+                        implemented features for further feedback.
+                      </li>
+                      <li>
+                        Created promotional video content demonstrating
+                        application features
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow border-0 rounded-4 mb-5">
+            <div class="card-body p-5">
+              <div class="row align-items-center gx-5">
+                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                  <div class="bg-light p-4 rounded-4">
+                    <div class="text-primary fw-bolder mb-2">
+                      Jan 2015 - Jul 2021
+                    </div>
+                    <div class="small fw-bolder">
+                      Web Developer and Computer Repair Technician
+                    </div>
+                    <div class="small text-primary">BWISE</div>
+                    <div class="small text-muted">Dallas, TX</div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div>
+                    <ul>
+                      <li>
+                        Designed and developed custom web application with event
+                        scheduling and donation management features.
+                      </li>
+                      <li>
+                        Troubleshooted and repaired iOS, Android, macOS, and
+                        Windows computer software issues.
+                      </li>
+                      <li>
+                        Met weekly with supervisor and updated company website
+                        with a complete redesign.
+                      </li>
+                      <li>
+                        Created promotional flyers and videos for company
+                        events.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow border-0 rounded-4 mb-5">
+            <div class="card-body p-5">
+              <div class="row align-items-center gx-5">
+                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                  <div class="bg-light p-4 rounded-4">
+                    <div class="text-primary fw-bolder mb-2">
+                      Jun 2019 - Aug 2019
+                    </div>
+                    <div class="small fw-bolder">Consulting Intern</div>
+                    <div class="small text-primary">Accenture</div>
+                    <div class="small text-muted">Dallas, TX</div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div>
+                    <ul>
+                      <li>
+                        Developed a database application to automatically
+                        analyze usage data, offer suggestions for optimizing
+                        cloud costs, and generate savings reports — developed
+                        using Java, VBA, and SQL.
+                      </li>
+                      <li>
+                        Aided cloud migration project by updating firewall rules
+                        to be applied to AWS EC2 instances.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Divider-->
+        <div class="pb-5"></div>
+        <!-- Skills Section-->
+        <section>
+          <!-- Skillset Card-->
+          <div class="card shadow border-0 rounded-4 mb-5">
+            <div class="card-body p-5">
+              <!-- Professional skills list-->
+              <div class="mb-5">
+                <div class="d-flex align-items-center mb-4">
+                  <div
+                    class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                    <i class="bi bi-tools"></i>
+                  </div>
+                  <h3 class="fw-bolder mb-0">
+                    <span class="text-gradient d-inline"
+                      >Skills</span
+                    >
+                  </h3>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                  <div class="col mb-4 mb-md-0">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      SEO/SEM Marketing
+                    </div>
+                  </div>
+                  <div class="col mb-4 mb-md-0">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      Statistical Analysis
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      Web Development
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                  <div class="col mb-4 mb-md-0">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      Distributed Computing
+                    </div>
+                  </div>
+                  <div class="col mb-4 mb-md-0">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      Server Administration
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      System Design
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3">
+                  <div class="col mb-4 mb-md-0">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      Network Security
+                    </div>
+                  </div>
+                  <div class="col mb-4 mb-md-0">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      Adobe Software Suite
+                    </div>
+                  </div>
+                  <div class="col mb-4 mb-md-0">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      Client-focused <br>Needs Assessment
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Languages list-->
+              <div class="mb-0">
+                <div class="d-flex align-items-center mb-4">
+                  <div
+                    class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                    <i class="bi bi-code-slash"></i>
+                  </div>
+                  <h3 class="fw-bolder mb-0">
+                    <span class="text-gradient d-inline">Languages</span>
+                  </h3>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                  <div class="col mb-4 mb-md-0">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      HTML
+                    </div>
+                  </div>
+                  <div class="col mb-4 mb-md-0">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      CSS
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      Typescript/JavaScript
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                  <div class="col mb-4 mb-md-0">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      SQL
+                    </div>
+                  </div>
+                  <div class="col mb-4 mb-md-0">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      Java
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      Go
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3">
+                  <div class="col mb-4 mb-md-0">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      Python
+                    </div>
+                  </div>
+                  <div class="col mb-4 mb-md-0">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      C#
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                      C
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</MainLayout>
+
+<!-- <style>
+
+</style> -->

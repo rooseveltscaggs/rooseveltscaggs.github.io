@@ -1,0 +1,98 @@
+---
+function LightenDarkenColor(col, amt) {
+  var usePound = false;
+  if (col[0] == "#") {
+    col = col.slice(1);
+    usePound = true;
+  }
+
+  var num = parseInt(col, 16);
+
+  var r = (num >> 16) + amt;
+
+  if (r > 255) r = 255;
+  else if (r < 0) r = 0;
+
+  var b = ((num >> 8) & 0x00ff) + amt;
+
+  if (b > 255) b = 255;
+  else if (b < 0) b = 0;
+
+  var g = (num & 0x0000ff) + amt;
+
+  if (g > 255) g = 255;
+  else if (g < 0) g = 0;
+
+  return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16);
+}
+// interface Props {
+// 	title: string;
+// 	body: string;
+// 	href: string;
+// }
+
+// const { href, title, body } = Astro.props;
+const { toggleText } = Astro.props;
+const themeMappings = {
+  Angular: "#df0131",
+  React: "#06a9ec",
+  "D3.js": "#f5854b",
+  PostgreSQL: "#336691",
+  MSSQL: "#ba313b",
+  Docker: "#0099c3",
+  Jenkins: "#325061",
+  Git: "#f15132",
+  Bash: "#000101",
+  Express: "#3e873c",
+  "Node.js": "#3e873c",
+  Java: "#f8981d",
+  Flask: "#000101",
+  Python: "#3977a4",
+  Javascript: "#e5a027",
+  ".NET Core": "#5a2d91",
+  EC2: "#ff9800",
+};
+
+const foregroundColor = themeMappings[toggleText];
+const backgroundColor = "white";
+const hoverColorActive = LightenDarkenColor(themeMappings[toggleText], -10);
+---
+
+<button class="badge fw-bolder mb-1 me-1">{toggleText}</button>
+
+<style define:vars={{ foregroundColor, backgroundColor, hoverColorActive }}>
+  .badge {
+    font-size: 0.8rem;
+    border-radius: 50rem !important;
+    border: 1px solid;
+
+    /* border-color: red; */
+    /* color: red; */
+    /* background-color: white; */
+    border-color: var(--foregroundColor);
+    color: var(--foregroundColor);
+    background-color: var(--backgroundColor);
+  }
+
+  .active {
+    color: var(--backgroundColor);
+    background-color: var(--foregroundColor);
+  }
+
+  .active:hover {
+    background-color: var(--hoverColorActive);
+    transition: 0.3s;
+  }
+
+  :hover {
+    color: var(--backgroundColor);
+    background-color: var(--foregroundColor);
+    transition: 0.3s;
+  }
+
+  /* .inactive {
+          border-color: red;
+          color: red;
+          background-color: white;
+      } */
+</style>

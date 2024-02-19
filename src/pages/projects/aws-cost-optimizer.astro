@@ -1,0 +1,472 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import HeroImage from "../../img/aws-cost-optimizer/HeroImage.png";
+import MainframeMBPImage from "../../img/mainframe_msb_macbookpro.png";
+import "../../styles/uikit.css";
+import { Image } from "astro:assets";
+// import "../../styles/global.css";
+import ImportImage from "../../img/aws-cost-optimizer/ImportImage.png";
+import MBP_OptimizerHome from "../../img/aws-cost-optimizer/MBP_OptimizerHome.png";
+import JavaWebScrape from "../../img/aws-cost-optimizer/JavaWebScrape.png";
+import MBP_PriceCalculator from "../../img/aws-cost-optimizer/MBP_PriceCalculator.png";
+import MBP_UptimeCalculator from "../../img/aws-cost-optimizer/MBP_UptimeCalculator.png";
+import MBP_OptWizardMB from "../../img/aws-cost-optimizer/MBP_OptWizardMB.png";
+import MBP_ProjectedSavings from "../../img/aws-cost-optimizer/MBP_ProjectedSavings.png";
+---
+
+<script is:inline src="https://unpkg.com/feather-icons"></script>
+<script
+  is:inline
+  defer=""
+  src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+  crossorigin="anonymous"></script>
+<MainLayout subtitle="AWS EC2 Optimizer">
+  <header
+    class="page-header-ui page-header-ui-dark bg-gradient-primary-to-secondary">
+    <div class="page-header-ui-content">
+      <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-xl-8 col-lg-10 text-center mb-4" data-aos="fade">
+            <h1 class="page-header-ui-title">AWS EC2 Cost Optimizer</h1>
+            <p class="page-header-ui-text">Cost optimization made easy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="svg-border-rounded text-light">
+      <!-- Rounded SVG Border-->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 144.54 17.34"
+        preserveAspectRatio="none"
+        fill="currentColor">
+        <path
+          d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+        ></path>
+      </svg>
+    </div>
+  </header>
+  <section class="bg-light pb-10 pt-1">
+    <div class="container px-5">
+      <div class="device-laptop text-gray-200 mt-n10" data-aos="fade-up">
+        <svg
+          class="device-container"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="83.911 298.53 426.962 243.838">
+          <path
+            d="M474.843 516.208V309.886c0-6.418-4.938-11.355-11.354-11.355H131.791c-6.417 0-11.354 4.938-11.354 11.355v206.816H83.911v13.326c4.938 7.896 31.098 12.34 40.969 12.34h345.024c10.366 0 36.526-4.936 40.969-12.34v-13.326h-36.03v-.494zM134.26 313.341h326.762v203.361H134.26V313.341z">
+          </path>
+        </svg>
+        <img class="device-screenshot" src={HeroImage.src} />
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-10">
+    <div class="container px-5">
+      <div class="row gx-5 text-center">
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <div
+            class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4">
+            <i data-feather="user"></i>
+          </div>
+          <h3>Easy to use</h3>
+          <p class="mb-0">
+            With its simple interface, EC2 Optimizer is easy to navigate
+          </p>
+        </div>
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <div
+            class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4">
+            <i data-feather="trending-up"></i>
+          </div>
+          <h3>Streamline focused</h3>
+          <p class="mb-0">
+            Smart suggestions provide an array of options that are cost focused
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <div
+            class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4">
+            <i data-feather="code"></i>
+          </div>
+          <h3>Feature rich</h3>
+          <p class="mb-0">
+            Powerful tools are built-in to do all of the heavy lifting
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-light py-10">
+    <div class="container px-5 mb-5">
+      <div class="row gx-5 justify-content-center">
+        <div class="col-lg-6">
+          <div class="text-center">
+            <div class="text-xs text-uppercase-expanded text-primary mb-2">
+              Application Features
+            </div>
+            <h2 class="mb-5">
+              Take the guesswork out of cloud cost optimization
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-5">
+        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+          <a
+            class="card text-center text-decoration-none h-100 lift"
+            href="#DataImport">
+            <div class="card-body py-5">
+              <div
+                class="icon-stack icon-stack-lg bg-green-soft text-green mb-4">
+                <i class="fa-solid fa-file-import"></i>
+              </div>
+              <h5>Data Import</h5>
+              <p class="card-text small">
+                With its data import feature, instance usage data can quickly pull in data from the AWS platform for analysis.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 mb-5"
+          data-aos="fade-up"
+          data-aos-delay="100">
+          <a class="card text-center text-decoration-none h-100 lift" href="#Interface">
+            <div class="card-body py-5">
+              <div class="icon-stack icon-stack-lg bg-red-soft text-red mb-4">
+                <i data-feather="user"></i>
+              </div>
+              <h5>User Friendly Interface</h5>
+              <p class="card-text small">
+                EC2 Optimizer's interface maximizes ease while minimizing tedious work
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 mb-5"
+          data-aos="fade-up"
+          data-aos-delay="150">
+          <a class="card text-center text-decoration-none h-100 lift" href="#WebScraping">
+            <div class="card-body py-5">
+              <div
+                class="icon-stack icon-stack-lg bg-yellow-soft text-yellow mb-4">
+                <i data-feather="globe"></i>
+              </div>
+              <h5>Automated Web Scraping</h5>
+              <p class="card-text small">
+                A Java-powered web client automatically keeps AWS pricing up-to-date
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0" data-aos="fade-up">
+          <a class="card text-center text-decoration-none h-100 lift" href="#Calculators">
+            <div class="card-body py-5">
+              <div
+                class="icon-stack icon-stack-lg bg-purple-soft text-purple mb-4">
+                <i class="fa-solid fa-calculator"></i>
+              </div>
+              <h5>Specialized Calculators</h5>
+              <p class="card-text small">
+                Specialized calculators streamline reptitive calculations
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 mb-5 mb-md-0"
+          data-aos="fade-up"
+          data-aos-delay="100">
+          <a class="card text-center text-decoration-none h-100 lift" href="#OptimizationWizard">
+            <div class="card-body py-5">
+              <div class="icon-stack icon-stack-lg bg-blue-soft text-blue mb-4">
+                <i class="fa-solid fa-hat-wizard"></i>
+              </div>
+              <h5>Optimization Wizard</h5>
+              <p class="card-text small">
+                Automatically and intelligently analyzes instance usage data and offers suggestions for suitable downgrades
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <a class="card text-center text-decoration-none h-100 lift" href="#SavingsReports">
+            <div class="card-body py-5">
+              <div
+                class="icon-stack icon-stack-lg bg-orange-soft text-orange mb-4">
+                <i class="fa-solid fa-chart-simple"></i>
+              </div>
+              <h5>Savings Reports</h5>
+              <p class="card-text small">
+                Quickly create savings reports, all without using any Excel formulas
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container-lg py-5" id="DataImport">
+      <h1 class="page-header-ui-title title-xl text-green mb-3">Data Import</h1>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <h3 class="mb-2 text-green">
+              Import instance usage data directly into the app
+            </h3>
+            <h4 class="col-xl-7 mb-4">
+              EC2 Optimizer allows for instance usage data to be imported
+              from any cloud provider, making it quick and simple to get started
+              with analyzing instance usage patterns.
+            </h4>
+          </div>
+          <Image
+            src={ImportImage}
+            alt="Mainframe's Magic Schedule Builder on the homepage"
+            class="hero-md-image center"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container-lg py-5" id="Interface">
+      <h1 class="page-header-ui-title title-xl text-red mb-3">
+        User Friendly Interface
+      </h1>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <h3 class="mb-2 text-red">Simple Graphical User Interface</h3>
+            <h4 class="col-xl-7 mb-4">
+              Interact with the app just by pointing and clicking.
+              No need for any special formulas or advanced keyboard shortcuts.
+            </h4>
+          </div>
+          <Image
+            src={MBP_OptimizerHome}
+            alt="Mainframe's Magic Schedule Builder on the homepage"
+            class="hero-image center"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container-lg py-5" id="WebScraping">
+      <h1 class="page-header-ui-title title-xl text-yellow mb-3">
+        Automated Web Scraping
+      </h1>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <h3 class="mb-2 text-yellow">Automatic Pricing Updates</h3>
+            <h4 class="col-xl-7 mb-4">
+              EC2 Optimizer comes equipped with its very own Java-powered web client that scrapes the Amazon Web Services site to ensure that pricing information and cost optimizations are always accurate and up-to-date.
+            </h4>
+          </div>
+          <Image
+            src={JavaWebScrape}
+            alt="Mainframe's Magic Schedule Builder on the homepage"
+            class="hero-md-image center"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container-lg py-5" id="Calculators">
+      <h1 class="page-header-ui-title title-xl text-purple mb-3">
+        Specialized Calculators
+      </h1>
+
+      <div class="row">
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card mb-4 h-100">
+            <div class="card-body">
+              <div class="row">
+                <h3 class="mb-2 text-purple">Uptime Calculator</h3>
+                <h4 class="mb-4">
+                  New slow-motion screen savers of breathtaking locations from
+                  around the world look beautiful on your large Mac display.
+                  When you log in, they seamlessly become your desktop
+                  wallpaper.
+                </h4>
+                <Image
+                  src={MBP_UptimeCalculator}
+                  alt="Mainframe's Magic Schedule Builder on the homepage"
+                  class="hero-md-image center"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card mb-4 h-100">
+            <div class="card-body">
+              <div class="row">
+                <h3 class="mb-2 text-purple">Instance Pricing Calculator</h3>
+                <h4 class="mb-4">
+                  New slow-motion screen savers of breathtaking locations from
+                  around the world look beautiful on your large Mac display.
+                  When you log in, they seamlessly become your desktop
+                  wallpaper.
+                </h4>
+                <Image
+                  src={MBP_PriceCalculator}
+                  alt="Mainframe's Magic Schedule Builder on the homepage"
+                  class="hero-md-image center"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container-lg py-5" id="OptimizationWizard">
+      <h1 class="page-header-ui-title title-xl text-blue mb-3">
+        Optimization Wizard
+      </h1>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <h3 class="mb-2 text-blue">Hands-free Optimization</h3>
+            <h4 class="col-xl-7 mb-4">
+              Say goodbye to complicated Excel formulas. With the Optimization
+              Wizard, cloud instance downgrade options are listed automatically based on
+              entered usage data with potential matches being ranked by
+              suitability.
+            </h4>
+          </div>
+          <Image
+            src={MBP_OptWizardMB}
+            alt="Mainframe's Magic Schedule Builder on the homepage"
+            class="hero-image center"
+          />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container-lg py-5" id="SavingsReports">
+      <h1 class="page-header-ui-title title-xl text-orange mb-3">
+        Savings Reports
+      </h1>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <h3 class="mb-2 text-orange">Create savings reports in a flash</h3>
+            <h4 class="col-xl-7 mb-4">
+              Once cloud instance downgrade options have been selected,
+              EC2 Optimizer can automatically calculate estimated savings based on existing usage patterns and generate a report for export.
+              
+            </h4>
+          </div>
+          <Image
+            src={MBP_ProjectedSavings}
+            alt="Mainframe's Magic Schedule Builder on the homepage"
+            class="hero-image center"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-dark pb-10 pt-15">
+    <div class="container px-5">
+      <div class="row gx-5 mb-10 mt-5">
+        <div class="col-lg-6 mb-5">
+          <div class="d-flex h-100">
+            <div class="icon-stack flex-shrink-0 bg-teal text-white">
+              <i class="fa-solid fa-question"></i>
+            </div>
+            <div class="ms-4">
+              <h5 class="text-white">What technologies are used?</h5>
+              <p class="text-white-50">
+                EC2 Optimizer was written using VBA, Java, and SQL. Specifically,
+                it uses VBA for the local Access frontend, SQL for interfacing with the backend Microsoft SQL Server backend, and VBA for the Microsoft Access frontend logic.
+                Additionally, it uses Java which powers the web scraper that automatically refreshes AWS pricing data.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-5">
+          <div class="d-flex h-100">
+            <div class="icon-stack flex-shrink-0 bg-teal text-white">
+              <i class="fas fa-question"></i>
+            </div>
+            <div class="ms-4">
+              <h5 class="text-white">How is the data stored?</h5>
+              <p class="text-white-50">
+                The application utilizes Microsoft SQL Server to store data in the backend.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>
+
+<script is:inline>
+  feather.replace();
+</script>
+
+<style>
+  .title-xl {
+    font-size: 3rem;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-image {
+    max-width: 70vw;
+    display: block;
+    /* max-width: 230px; */
+    /* max-height: 95px; */
+    height: auto;
+  }
+
+  .hero-image-split {
+    /* max-width: 30vw; */
+    /* max-height: 500px; */
+    height: 30vw;
+    display: block;
+    /* max-width: 230px; */
+    /* max-height: 95px; */
+    width: auto;
+  }
+
+  .mobile-device {
+    max-height: 500px;
+    width: auto;
+  }
+
+  .hero-md-image {
+    /* max-width: 30vw; */
+    max-width: 40vw;
+    min-width: 275px;
+    display: block;
+    /* max-width: 230px; */
+    /* max-height: 95px; */
+    height: auto;
+  }
+</style>
