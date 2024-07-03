@@ -18211,14 +18211,15 @@ fieldset:disabled .btn {
   }
 }
 
-html,
+/* This was causing a bug with FsLightbox */
+/* html,
 body {
   height: 100%;
-}
+} */
 
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 @font-face {
   font-family: "Metropolis";

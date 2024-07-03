@@ -13509,10 +13509,11 @@ fieldset:disabled .btn {
     }
 }
 
-body,
-html {
-    height: 100%;
-}
+/* This was causing a bug with FsLightbox */
+/* html,
+body {
+  height: 100%;
+} */
 
 .bg-gradient-primary-to-secondary {
     background: #1e30f3;

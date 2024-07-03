@@ -18,6 +18,7 @@ import GradebookMatrix_MBP from "../../img/mainframe-pro/MBP_GradebookMatrix.png
 import GradeDetails_MBP from "../../img/mainframe-pro/MBP_GradeDetails.png";
 import Assignments_MBP from "../../img/mainframe-pro/MBP_Assignments.png";
 import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
+import LightboxImage from "../../components/LightboxImage.astro";
 ---
 
 <script is:inline src="https://unpkg.com/feather-icons"></script>
@@ -265,10 +266,10 @@ import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
               you log in, they seamlessly become your desktop wallpaper.
             </h4>
           </div>
-          <Image
+          <LightboxImage
             src={CreateCourseSection}
             alt="Mainframe's Magic Schedule Builder on the homepage"
-            class="hero-image center"
+            className="hero-image center"
           />
         </div>
       </div> -->
@@ -287,11 +288,12 @@ import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
                   reconfigure course section details as little or as much as
                   needed.
                 </h4>
-                <Image
+                <LightboxImage src={CreateCourseSection} alt="Mainframe's Magic Schedule Builder on the homepage" className="hero-md-image center" />
+                <!-- <LightboxImage
                   src={CreateCourseSection}
                   alt="Mainframe's Magic Schedule Builder on the homepage"
-                  class="hero-md-image center"
-                />
+                  className="hero-md-image center"
+                /> -->
               </div>
             </div>
           </div>
@@ -308,10 +310,10 @@ import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
                   change a course section's weekly schedule. With changes being
                   reflected everywhere instantly.
                 </h4>
-                <Image
+                <LightboxImage
                   src={CreateCourseSectionMeets}
                   alt="Mainframe's Magic Schedule Builder on the homepage"
-                  class="hero-md-image center"
+                  className="hero-md-image center"
                 />
               </div>
             </div>
@@ -340,17 +342,19 @@ import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
           </div>
           <div class="row">
             <div class="col-lg-8 mb-md-4">
-              <Image
+              <LightboxImage
                 src={Attendance_MacBook}
                 alt="Mainframe's Magic Schedule Builder on the homepage"
-                class="hero-image-split mx-auto"
+                className="hero-image-split mx-auto"
+                gallery="live-attendance"
               />
             </div>
             <div class="col-lg-4">
-              <Image
+              <LightboxImage
                 src={Attendance_iPhone}
                 alt="Mainframe's Magic Schedule Builder on the homepage"
-                class="hero-image-split mx-auto"
+                className="hero-image-split mx-auto"
+                gallery="live-attendance"
               />
             </div>
           </div>
@@ -373,10 +377,10 @@ import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
               quick and easy.
             </h4>
           </div>
-          <Image
+          <LightboxImage
             src={ReportGenerator}
             alt="Mainframe's Magic Schedule Builder on the homepage"
-            class="hero-image center"
+            className="hero-image center"
           />
         </div>
       </div>
@@ -399,10 +403,10 @@ import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
               and the student's remaining graduation requirements.
             </h4>
           </div>
-          <Image
+          <LightboxImage
             src={MagicScheduleBuilder}
             alt="Mainframe's Magic Schedule Builder on the homepage"
-            class="hero-image center"
+            className="hero-image center"
           />
         </div>
       </div>
@@ -427,17 +431,19 @@ import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
           </div>
           <div class="row">
             <div class="col-lg-8 mb-md-4">
-              <Image
+              <LightboxImage
                 src={QuickGrader_MBP}
                 alt="Mainframe's Magic Schedule Builder on the homepage"
-                class="hero-image-split mx-auto"
+                className="hero-image-split mx-auto"
+                gallery="responsive-ui"
               />
             </div>
             <div class="col-lg-4">
-              <Image
+              <LightboxImage
                 src={QuickGrader_iPhone}
                 alt="Mainframe's Magic Schedule Builder on the homepage"
-                class="hero-image-split mx-auto"
+                className="hero-image-split mx-auto"
+                gallery="responsive-ui"
               />
             </div>
           </div>
@@ -454,10 +460,10 @@ import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
                   See and edit student grade records at a glance with the
                   classic gradebook matrix style.
                 </h4>
-                <Image
+                <LightboxImage
                   src={GradebookMatrix_MBP}
                   alt="Mainframe's Magic Schedule Builder on the homepage"
-                  class="hero-md-image center"
+                  className="hero-md-image center"
                 />
               </div>
             </div>
@@ -473,10 +479,10 @@ import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
                   lightning speed. With changes being saved and reflected
                   automatically.
                 </h4>
-                <Image
+                <LightboxImage
                   src={QuickGrader_MBP}
                   alt="Mainframe's Magic Schedule Builder on the homepage"
-                  class="hero-md-image center"
+                  className="hero-md-image center"
                 />
               </div>
             </div>
@@ -492,10 +498,10 @@ import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
                   setting the assignment category weights and points exactly how
                   you like.
                 </h4>
-                <Image
+                <LightboxImage
                   src={Assignments_MBP}
                   alt="Mainframe's Magic Schedule Builder on the homepage"
-                  class="hero-md-image center"
+                  className="hero-md-image center"
                 />
               </div>
             </div>
@@ -511,10 +517,10 @@ import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
                   view showing all graded assignments organized by their
                   weighted categories.
                 </h4>
-                <Image
+                <LightboxImage
                   src={GradeDetails_MBP}
                   alt="Mainframe's Magic Schedule Builder on the homepage"
-                  class="hero-md-image center"
+                  className="hero-md-image center"
                 />
               </div>
             </div>
@@ -539,10 +545,10 @@ import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
               student behavior.
             </h4>
           </div>
-          <Image
+          <LightboxImage
             src={Discipline_MBP}
             alt="Mainframe's Magic Schedule Builder on the homepage"
-            class="hero-image center"
+            className="hero-image center"
           />
         </div>
       </div>
@@ -608,6 +614,7 @@ import Discipline_MBP from "../../img/mainframe-pro/MBP_Discipline.png";
     </div>
   </section>
 </MainLayout>
+
 
 <script is:inline>
   feather.replace();

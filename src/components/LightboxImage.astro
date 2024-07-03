@@ -1,0 +1,96 @@
+---
+import { Image } from "astro:assets";
+
+function generateUniqueId() {
+    const timestamp = Date.now().toString(36); // Convert current timestamp to a base-36 string
+    const randomNum = Math.random().toString(36).substr(2, 5); // Generate a random base-36 string
+    return timestamp + randomNum;
+}
+
+const {
+  src = "",
+  alt = "",
+  className = "",
+  imageSrc = src.src,
+  gallery = generateUniqueId()
+} = Astro.props;
+---
+
+<a data-fslightbox={gallery} href={imageSrc}>
+    <Image
+    src={src}
+    alt={alt}
+    class={className}
+    />
+</a>
+
+<!-- <span style="transform: rotate(0);" class="">
+    <Image
+    src={src}
+    alt={alt}
+    class={className}
+    />
+    <a data-fslightbox href={imageSrc} class="stretched-link"></a>
+</span> -->
+
+<style>
+    .title-xl {
+      font-size: 3rem;
+    }
+  
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .hero-image {
+      max-width: 70vw;
+      display: block;
+      /* max-width: 230px; */
+      /* max-height: 95px; */
+      height: auto;
+    }
+  
+    .hero-image-split {
+      /* max-width: 30vw; */
+      /* max-height: 500px; */
+      height: 30vw;
+      display: block;
+      /* max-width: 230px; */
+      /* max-height: 95px; */
+      width: auto;
+    }
+  
+    .mobile-device {
+      max-height: 500px;
+      width: auto;
+    }
+
+    .md-image-container {
+        max-width: 36vw;
+    }
+  
+    .hero-md-image {
+      /* max-width: 30vw; */
+      /* max-width: 40vw; */
+      max-width: 650px;
+      width: 36vw;
+      min-width: 275px;
+      display: block;
+      /* max-width: 230px; */
+      /* max-height: 95px; */
+      height: auto;
+    }
+
+    .hero-sm-image {
+    max-width: 30vw;
+    /* max-width: 40vw; */
+    min-width: 275px;
+    display: block;
+    /* max-width: 230px; */
+    /* max-height: 95px; */
+    height: auto;
+  }
+</style>
+  
