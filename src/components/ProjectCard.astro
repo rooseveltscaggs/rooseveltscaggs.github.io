@@ -7,6 +7,7 @@ const {
   description = "TBD",
   tagList = "",
   imageSrc = "https://source.unsplash.com/2d4lAQAlbDA/800x500",
+  isNew = false
 } = Astro.props;
 
 const tags = tagList.split(',');
@@ -14,12 +15,7 @@ const tags = tagList.split(',');
 
 <div class="col-lg-6 mb-5">
   <a class="card lift h-100" href={linkTo}>
-    <img class="card-img-top" src={imageSrc} alt={projectTitle} />
-    <!-- <Image
-    src={imageSrc}
-    alt="Mainframe's Magic Schedule Builder on the homepage"
-    class="hero-md-image center"
-  /> -->
+    <img class={`card-img-top ${ isNew ? 'shimmer' : ''}`} src={imageSrc} alt={projectTitle} />
     <div class="card-body">
       <h4 class="card-title mb-2 text-primary">{projectTitle}</h4>
       <p class="card-text" set:html={description}></p>
@@ -52,4 +48,19 @@ const tags = tagList.split(',');
   </a>
 </div>
 
-<!-- <style></style> -->
+<style>
+.shimmer {
+  color: grey;
+  display:inline-block;
+  -webkit-mask:linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 2.5s forwards;
+  font-size: 50px;
+  /* max-width:200px; */
+}
+
+@keyframes shimmer {
+  100% {-webkit-mask-position:left}
+}
+
+</style>
