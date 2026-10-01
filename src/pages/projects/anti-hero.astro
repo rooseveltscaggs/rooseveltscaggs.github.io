@@ -71,7 +71,7 @@ import LightboxImage from "../../components/LightboxImage.astro";
             d="M474.843 516.208V309.886c0-6.418-4.938-11.355-11.354-11.355H131.791c-6.417 0-11.354 4.938-11.354 11.355v206.816H83.911v13.326c4.938 7.896 31.098 12.34 40.969 12.34h345.024c10.366 0 36.526-4.936 40.969-12.34v-13.326h-36.03v-.494zM134.26 313.341h326.762v203.361H134.26V313.341z">
           </path>
         </svg>
-        <img class="device-screenshot" src={HeroImage.src} />
+        <img class="device-screenshot" src={HeroImage.src} alt="ANTI-HERO web view on a laptop" />
       </div>
     </div>
   </section>
@@ -86,8 +86,8 @@ import LightboxImage from "../../components/LightboxImage.astro";
           </div>
           <h3>Flexible & Scalable</h3>
           <p class="mb-0">
-            Configure ANTI-HERO exactly how you want or take a hands off
-            approach, your choice
+            Configure ANTI-HERO exactly how you want or take a hands-off
+            approach — your choice
           </p>
         </div>
         <div class="col-lg-4 mb-5 mb-lg-0">
@@ -251,7 +251,7 @@ import LightboxImage from "../../components/LightboxImage.astro";
           </div>
           <LightboxImage
             src={FailureDetection}
-            alt="Mainframe's Magic Schedule Builder on the homepage"
+            alt="Diagram of ANTI-HERO partner nodes detecting a failure and taking over"
             className="hero-image center"
           />
         </div>
@@ -276,7 +276,7 @@ import LightboxImage from "../../components/LightboxImage.astro";
           </div>
           <LightboxImage
             src={NodeRecovery}
-            alt="Mainframe's Magic Schedule Builder on the homepage"
+            alt="Diagram of a failed ANTI-HERO worker node recovering through the Orchestrator"
             className="hero-image center"
           />
         </div>
@@ -296,7 +296,7 @@ import LightboxImage from "../../components/LightboxImage.astro";
               Centralized orchestration, but only as needed
             </h3>
             <h4 class="col-xl-7 mb-4">
-              Worker nodes only report to the centralized orchestrator as needed.
+              Worker nodes only report to the centralized Orchestrator as needed.
               Under normal operating conditions, no centralized communication is
               needed. As a result, even if communication between worker nodes
               and the Orchestrator temporarily falters, transactions can
@@ -326,13 +326,13 @@ import LightboxImage from "../../components/LightboxImage.astro";
               Scale with Additional Nodes as Needed
             </h3>
             <h4 class="col-xl-7 mb-4">
-              Seamelessly register new worker nodes, transfer inventory, and
+              Seamlessly register new worker nodes, transfer inventory, and
               assign partners
             </h4>
           </div>
           <LightboxImage
             src={NewServer}
-            alt="Mainframe's Magic Schedule Builder on the homepage"
+            alt="Diagram of a new worker node being registered with ANTI-HERO"
             className="hero-image center"
           />
         </div>
@@ -357,7 +357,7 @@ import LightboxImage from "../../components/LightboxImage.astro";
           </div>
           <LightboxImage
             src={MockupMBP_Node1}
-            alt="Mainframe's Magic Schedule Builder on the homepage"
+            alt="ANTI-HERO web view showing worker node status and network traffic"
             className="hero-image center"
           />
         </div>
@@ -385,7 +385,7 @@ import LightboxImage from "../../components/LightboxImage.astro";
           </div>
           <LightboxImage
             src={AntiHeroClient}
-            alt="Mainframe's Magic Schedule Builder on the homepage"
+            alt="ANTI-HERO interactive test client running in a terminal"
             className="hero-md-image center"
           />
         </div>
@@ -404,11 +404,11 @@ import LightboxImage from "../../components/LightboxImage.astro";
             <div class="ms-4">
               <h5 class="text-white">What technologies are used?</h5>
               <p class="text-white-50">
-                The basis of ANTI-HERO are the intercommunicating APIs which
-                were built using Python framework Flask (later modifications
+                The basis of ANTI-HERO is its intercommunicating APIs, which
+                were built using the Python framework Flask (later modifications
                 used FastAPI). Additionally, the background worker and test
                 client were also written using Python. ANTI-HERO's web view is a
-                React-based single page application that connects directly to
+                React-based single-page application that connects directly to
                 the servers running ANTI-HERO.
               </p>
             </div>
@@ -422,9 +422,9 @@ import LightboxImage from "../../components/LightboxImage.astro";
             <div class="ms-4">
               <h5 class="text-white">How is the data stored?</h5>
               <p class="text-white-50">
-                Each worker node and Orchestrator have their own local
+                Each worker node and the Orchestrator has its own local
                 standalone PostgreSQL database. ANTI-HERO utilizes SQLAlchemy in
-                order to interface with the PostgreSQL database, however any
+                order to interface with the PostgreSQL database; however, any
                 database compatible with SQLAlchemy can be configured for use
                 with the system.
               </p>
