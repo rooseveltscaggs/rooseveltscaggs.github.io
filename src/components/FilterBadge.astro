@@ -36,7 +36,12 @@ const themeMappings = {
   "Django": "#2aaa76"
 };
 
-const foregroundColor = themeMappings[badgeText];
+const colorForTag = (tag) =>
+  Object.entries(themeMappings).find(
+    ([name]) => name.toLowerCase() === tag?.toLowerCase(),
+  )?.[1];
+
+const foregroundColor = colorForTag(badgeText);
 const backgroundColor = "white";
 ---
 

@@ -63,9 +63,14 @@ const themeMappings = {
     "Django": "#2aaa76"
 };
 
-const foregroundColor = themeMappings[toggleText];
+const colorForTag = (tag) =>
+  Object.entries(themeMappings).find(
+    ([name]) => name.toLowerCase() === tag?.toLowerCase(),
+  )?.[1];
+
+const foregroundColor = colorForTag(toggleText);
 const backgroundColor = "white";
-const hoverColorActive = LightenDarkenColor(themeMappings[toggleText], -10);
+const hoverColorActive = LightenDarkenColor(foregroundColor, -10);
 ---
 
 <button class="badge fw-bolder mb-1 me-1">{toggleText}</button>
