@@ -21,10 +21,10 @@ const themeMappings = {
   Java: "#f8981d",
   Flask: "#575757",
   Python: "#3977a4",
-  Javascript: "#e5a027",
+  JavaScript: "#e5a027",
   ".NET Core": "#5a2d91",
   EC2: "#ff9800",
-  Typescript: "#3179c7",
+  TypeScript: "#3179c7",
   Nginx: "#009739",
   "C#": "#803689",
   IIS: "#4baae9",
@@ -36,7 +36,12 @@ const themeMappings = {
   "Django": "#2aaa76"
 };
 
-const foregroundColor = themeMappings[badgeText];
+const colorForTag = (tag) =>
+  Object.entries(themeMappings).find(
+    ([name]) => name.toLowerCase() === tag?.toLowerCase(),
+  )?.[1];
+
+const foregroundColor = colorForTag(badgeText);
 const backgroundColor = "white";
 ---
 
