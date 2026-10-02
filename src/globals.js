@@ -13,7 +13,7 @@ const themeMappings = {
     Java: "#f8981d",
     Flask: "#000101",
     Python: "#3977a4",
-    Javascript: "#e5a027",
+    JavaScript: "#e5a027",
     ".NET Core": "#5a2d91",
     EC2: "#ff9800",
   };
